@@ -32,3 +32,6 @@ via x (=columns) and y (=rows) coordinates
 
 
 
+## Thanks
+
+Thanks to https://github.com/theoephraim/node-google-spreadsheet for doing the real work. 
