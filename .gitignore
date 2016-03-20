@@ -31,3 +31,12 @@ node_modules
 
 # Optional REPL history
 .node_repl_history
+
+#project setup
+.idea
+# credentials don't belong in your repository
+credentials.json
+
+#starter stub during development
+starter.js
+

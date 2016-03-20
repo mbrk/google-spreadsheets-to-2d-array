@@ -1,0 +1,33 @@
+{
+  "name": "google-spreadsheets-to-2d-array",
+  "version": "0.0.1",
+  "description": "simple tool to transform all worksheets in a google spreadsheet into a 2 dimensional array accessible via x (=columns) and y (=rows) coordinates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbrk/google-spreadsheets-to-2d-array.git"
+  },
+  "keywords": [
+    "node",
+    "google",
+    "spreadsheets"
+  ],
+  "author": "Malte Burkhardt <malteburkhardt@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mbrk/google-spreadsheets-to-2d-array/issues"
+  },
+  "homepage": "https://github.com/mbrk/google-spreadsheets-to-2d-array#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "async": "^2.0.0-rc.1",
+    "bluebird": "^3.3.4",
+    "google-spreadsheet": "^2.0.0"
+  }
+}
