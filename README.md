@@ -4,7 +4,7 @@ via x (=columns) and y (=rows) coordinates
 
 ## Installation
 
-    npm install fiware-orion-mintaka
+    npm install google-spreadsheets-to-2d-array
 
 ## Usage
 
