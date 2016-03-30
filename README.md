@@ -24,14 +24,41 @@ via x (=columns) and y (=rows) coordinates
 
 	var id = '<your-spreadsheet-id>';
 
-	sheet.extract(id)
-		.then(function(r){
-			console.log(r.sheet(0).get(0,1));
-			console.log(r.sheet(1).get(0,1));
-		});
+	// load a spreadsheet
+	sheet.load(id)
+    	.then(function(r){
+    		console.log(r.sheet(0).get(0,1));
+    		console.log(r.sheet(1).get(0,1));
+    		console.log(r.sheet(0).data.length);
+    	})
+    	.catch(function(err){
+    		console.error(err);
+    	});
+
+	// load, change and save a spreadsheet
+	sheet.load(id)
+    	.then(function(r){
+    		// make changes to worksheet 1
+    		r.sheet(0).set(0,10,'Value 1');
+    		r.sheet(0).set(2,10,'Value 2');
+    		return sheet.save(id, r);
+
+    	})
+    	.then(function(r){
+    		console.log('success');
+    	})
+    	.catch(function(err){
+    		console.error(err);
+    	});
 
 
 
 ## Thanks
 
-Thanks to https://github.com/theoephraim/node-google-spreadsheet for doing the real work. 
+Thanks to https://github.com/theoephraim/node-google-spreadsheet for doing the real work.
+
+
+## Changelog
+
+v0.1.0 added saving capability, renamed #extract() to #load()
+v0.0.1 basic implementation
