@@ -1,6 +1,6 @@
 {
   "name": "google-spreadsheets-to-2d-array",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "simple tool to transform all worksheets in a google spreadsheet into a 2 dimensional array accessible via x (=columns) and y (=rows) coordinates",
   "main": "index.js",
   "scripts": {
