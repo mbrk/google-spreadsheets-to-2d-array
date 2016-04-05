@@ -12,7 +12,8 @@ via x (=columns) and y (=rows) coordinates
 	// configuration includes:
 	//  - credentials for your google service account
 	//  - number of rows to extract - otherwise all rows are extracted
-	//  - number of columns to extract - otherwise all cols are extrcted
+	//  - number of columns to extract - otherwise all cols are extracted
+	//  - logger: an instance of a logging tool e.g. winston.js - otherwise console will be used
 
 	var config = {
 		credentials: require('./credentials.json'),
@@ -52,7 +53,6 @@ via x (=columns) and y (=rows) coordinates
     	});
 
 
-
 ## Thanks
 
 Thanks to https://github.com/theoephraim/node-google-spreadsheet for doing the real work.
@@ -60,5 +60,5 @@ Thanks to https://github.com/theoephraim/node-google-spreadsheet for doing the r
 
 ## Changelog
 
-v0.1.0 added saving capability, renamed #extract() to #load()
-v0.0.1 basic implementation
+- v0.1.0 added saving capability, renamed #extract() to #load()
+- v0.0.1 basic implementation
